@@ -17,7 +17,7 @@ tab1, tab2 , tab3= st.tabs(["Quantity", "Percentage", "Table"])
 
 with tab1:
   
-  st.subheader('Top 5 by amount of offers found📊')
+  st.subheader('Top 5 by amount of offers found 📊')
   fig = plt.figure()
   colors = ['#D2042D', '#702963', '#C04000','#8F8585','#bdbdbd'] 
   plt.bar(providers['Via'], providers['Amount'],color=colors,edgecolor='black',linewidth=1)
@@ -45,7 +45,7 @@ with tab2:
     
     st.pyplot(fig)
   with taby2:
-    st.subheader('Distribution overall📊')
+    st.subheader('Distribution overall 📊')
   # Create bar chart sorted by value
     keys = [19.91,6.54,6.13,4.62,4.32,2.61,55.83]
   

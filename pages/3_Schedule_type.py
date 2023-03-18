@@ -15,7 +15,7 @@ df = pd.read_csv(csv_path)
 tab1, tab2 , tab3= st.tabs(["Quantity", "Percentage", "Table"])
 
 with tab1:
-    st.subheader('Types of contract📊')
+    st.subheader('Types of contract 📊')
     fig = plt.figure()
     colors = ['#D2042D', '#702963', '#C04000','#8F8585'] 
     plt.bar(df['Type'], df['Amount'],color=colors,edgecolor='black',linewidth=1)
@@ -25,7 +25,7 @@ with tab1:
     st.pyplot(fig)
 
 with tab2:
-    st.subheader('Types of contract📊')
+    st.subheader('Types of contract 📊')
     labels = [key for key in df['Type'][:2]]
     labels.append('Rest')
     keys = [key for key in df['Percentage'][:2]]
