@@ -37,9 +37,7 @@ with tab2:
           startangle = 0,
           autopct='%1.1f%%',
           colors=colors,
-          explode=explode,
-          shadow=True
-          
+          explode=explode
           )
     
     st.pyplot(fig)
