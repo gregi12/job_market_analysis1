@@ -5,7 +5,7 @@ import numpy as np
 import altair as alt
 import matplotlib.pyplot as plt
 st.set_option('deprecation.showPyplotGlobalUse', False)
-mpl.style.use('classic')
+
 st.set_page_config(
   page_title='Job market analsysis',
   page_icon = '📊'
