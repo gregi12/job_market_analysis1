@@ -64,11 +64,11 @@ try:
 
     with col3:
       if st.button("About me"):
-        original_title = "<p style='font-family:Calibri; font-size: 20px; font-weight:600;'> I'm a young person with a lot of energy and ideas. I am kind of guy who looks for patterns everywhere. Maybe I don't have strong math background, because I haven't graduate any studies but skills are there for sure, in secondary school I was laureate of district-level math competition (there were only about 80 students in my voivodeship with the same status).  I'm catching up with statistics and linear algebra on my own for some time .</p>"
+        original_title = "<p style='font-family:Calibri; font-size: 20px; font-weight:600;'> I'm a young person with a lot of energy and ideas. I am kind of guy who looks for patterns everywhere. Maybe I don't have strong math background, because I haven't graduate any studies but skills are there for sure, in secondary school I was laureate of district-level math competition (there were only about 80 students in my voivodeship with the same status).  </p>"
         st.markdown(original_title, unsafe_allow_html=True)
         with st.expander("Here is proof"):
           st.write("https://github.com/gregi12/Jobs-offers-project/blob/master/final_analysis.py")
-        original_title = "<p style='font-family:Calibri; font-size: 20px; font-weight:600;'> In the future I want to work AI industry .</p>"
+        original_title = "<p style='font-family:Calibri; font-size: 20px; font-weight:600;'>For some time I'm catching up with statistics and linear algebra, on my own . In the future I want to work in AI industry .</p>"
         st.markdown(original_title, unsafe_allow_html=True)
 except:
   pass
