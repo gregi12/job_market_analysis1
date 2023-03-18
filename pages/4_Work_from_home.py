@@ -15,7 +15,7 @@ df = pd.read_csv(csv_path)
 
 tab1, tab2 , tab3= st.tabs(["Quantity", "Percentage", "Table"])
 with tab1:
-    st.write(sns.countplot(df))
+    sns.countplot(df)
     
 
 with tab3:
