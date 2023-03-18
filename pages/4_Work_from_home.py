@@ -13,7 +13,3 @@ tab1, tab2 , tab3= st.tabs(["Quantity", "Percentage", "Table"])
 with tab1:
     st.image(png_path)
     
-    
-
-with tab3:
-    st.write(df)
