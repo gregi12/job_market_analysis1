@@ -64,7 +64,7 @@ try:
 
     with col3:
       if st.button("About me"):
-        original_title = '<p style="font-family:Calibri; font-size: 20px; font-weight:600;"> I am a young guy with a lot of energy and ideas.  In secondary school I was laureate of district-level math competition (there were only about 80 students in my voivodeship with the same status) </p>'
+        original_title = "<p style='font-family:Calibri; font-size: 20px; font-weight:600;'> I'm a young guy with a lot of energy and ideas. I am kind of guy who looks for patterns everywhere. Maybe I don't have strong math background because I haven't graduate any studies but skills are there for sure.In secondary school I was laureate of district-level math competition (there were only about 80 students in my voivodeship with the same status) </p>"
         st.markdown(original_title, unsafe_allow_html=True)
         with st.expander("Here is proof"):
           st.write("https://github.com/gregi12/Jobs-offers-project/blob/master/final_analysis.py")
