@@ -11,7 +11,7 @@ png_path = os.path.join(BASE_DIR, '..', 'files', 'out.png')
 
 tab1, tab2 , tab3= st.tabs(["Quantity", "Percentage", "Table"])
 with tab1:
-    st.write(png_path)
+    st.image(png_path)
     
     
 
