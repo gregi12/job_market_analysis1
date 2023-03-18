@@ -66,7 +66,8 @@ try:
       if st.button("About me"):
         original_title = '<p style="font-family:Calibri; font-size: 20px; font-weight:600;"> I am a young guy with a lot of energy and ideas.  In secondary school I was laureate of district-level math competition (there were only about 80 students in my voivodeship with the same status) </p>'
         st.markdown(original_title, unsafe_allow_html=True)
-        st.expander("Here is proof")
+        with st.expander("Here is proof"):
+          st.write("https://github.com/gregi12/Jobs-offers-project/blob/master/final_analysis.py")
 except:
   pass
 
