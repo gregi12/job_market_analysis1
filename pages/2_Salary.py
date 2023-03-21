@@ -11,7 +11,7 @@ dolary_path = os.path.join(BASE_DIR, '..', 'files', 'dolary.csv')
 funty_path = os.path.join(BASE_DIR, '..', 'files', 'funty.csv')
 # Wczytaj plik csv do dataframe
 df = pd.read_csv(dolary_path)
-# Uploading dataframe
+
 df1= pd.read_csv(funty_path)
 
 st.write('Choose currency or overall')
