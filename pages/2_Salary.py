@@ -18,8 +18,10 @@ st.write('Choose currency or overall')
 tab1,tab2,tab3,tab4= st.tabs(["Overview","Dollars", "Pounds", "Average salary"])
 with tab1:
     st.write("Below is link to code which took us from something like this: '£35,000 - £55,000','£30K–£41K a year', '45–75 an hour','70K–80K a year', '$75K–$85K a year' to what you see in next tabs. ")
-    st.expander('Check if u want!')
-    
+    with st.expander('Check if u want!'):
+        st.write('https://github.com/gregi12/job_market_analysis1/blob/main/getting_salaries.py')
+
+    d
 with tab2:
     st.subheader('Salary ranges in dollars 📊')
     colors = ['r', 'b', 'g'] + ['grey'] * 12
