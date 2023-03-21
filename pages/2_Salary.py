@@ -18,7 +18,7 @@ st.write('Choose currency or overall')
 tab1, tab2 , tab3= st.tabs(["Dollars", "Pounds", "Avearge salary"])
 
 with tab1:
-    t.subheader('Top 15 keywords by amount 📊')
+    st.subheader('Top 15 keywords by amount 📊')
     colors = ['r', 'b', 'g'] + ['grey'] * 12
     fig = plt.figure()
     plt.bar(df['salary'], df['amount'],color=colors, edgecolor='black')
