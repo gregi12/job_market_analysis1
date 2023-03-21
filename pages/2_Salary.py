@@ -13,3 +13,16 @@ funty_path = os.path.join(BASE_DIR, '..', 'files', 'funty.csv')
 df = pd.read_csv(dolary_path)
 # Uploading dataframe
 df1= pd.read_csv(funty_path)
+
+st.write('Choose currency or overall')
+tab1, tab2 , tab3= st.tabs(["Dollars", "Pounds", "Avearge salary"])
+
+with tab1:
+    t.subheader('Top 15 keywords by amount 📊')
+    colors = ['r', 'b', 'g'] + ['grey'] * 12
+    fig = plt.figure()
+    plt.bar(df['salary'], df['amount'],color=colors, edgecolor='black')
+    plt.xticks(rotation=90)
+    plt.ylabel('Amount')
+    # Display chart in Streamlit app
+    st.pyplot(fig)
