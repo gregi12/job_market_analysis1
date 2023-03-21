@@ -18,10 +18,20 @@ st.write('Choose currency or overall')
 tab1, tab2 , tab3= st.tabs(["Dollars", "Pounds", "Avearge salary"])
 
 with tab1:
-    st.subheader('Top 15 keywords by amount 📊')
+    st.subheader('Salary ranges in dollars 📊')
     colors = ['r', 'b', 'g'] + ['grey'] * 12
     fig = plt.figure()
     plt.bar(df['salary'], df['amount'],color=colors, edgecolor='black')
+    plt.xticks(rotation=90)
+    plt.ylabel('Amount')
+    # Display chart in Streamlit app
+    st.pyplot(fig)
+
+with tab2:
+    st.subheader('Salary ranges in pounds 📊')
+    colors = ['r', 'b', 'g'] + ['grey'] * 12
+    fig = plt.figure()
+    plt.bar(df1['salary'], df1['amount'],color=colors, edgecolor='black')
     plt.xticks(rotation=90)
     plt.ylabel('Amount')
     # Display chart in Streamlit app
