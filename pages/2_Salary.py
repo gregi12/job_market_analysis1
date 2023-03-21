@@ -21,7 +21,7 @@ with tab1:
     with st.expander('Check if u want!'):
         st.write('https://github.com/gregi12/job_market_analysis1/blob/main/getting_salaries.py')
 
-    d
+    
 with tab2:
     st.subheader('Salary ranges in dollars 📊')
     colors = ['r', 'b', 'g'] + ['grey'] * 12
