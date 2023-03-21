@@ -15,8 +15,11 @@ df = pd.read_csv(dolary_path)
 df1= pd.read_csv(funty_path)
 
 st.write('Choose currency or overall')
-tab1, tab2 , tab3= st.tabs(["Dollars", "Pounds", "Avearge salary"])
+tab1, tab2 , tab3,tab4= st.tabs(["Dollars", "Pounds", "Avearge salary","Overview"])
+with tab4:
+    st.write('So here i explaing how from this ')
 
+    
 with tab1:
     st.subheader('Salary ranges in dollars 📊')
     colors = ['r', 'b', 'g'] + ['grey'] * 12
