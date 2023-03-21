@@ -31,7 +31,7 @@ with tab2:
     st.pyplot(fig)
 
 with tab3:
-    st.write('Here are offers which originally were in £' )
+    st.write('Here are offers which originally were in pounds' )
     st.subheader('Salary ranges in pounds 📊')
     colors = ['r', 'b', 'g'] + ['grey'] * 12
     fig = plt.figure()
