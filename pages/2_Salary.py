@@ -50,7 +50,6 @@ with tab4:
     colors = ['r', 'b', 'g']
     fig = plt.figure()
     plt.bar(["Offers from US","Offers from UK","All offers in USD"],height= [90246,53534,70477],color=colors, edgecolor='black')
-    plt.xticks(rotation=90)
     plt.ylabel('Amount')
     # Display chart in Streamlit app
     st.pyplot(fig)
