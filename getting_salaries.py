@@ -146,6 +146,7 @@ for row in funty_extended:
         funt_counts[row[0]] += 1
     else:
         funt_counts[row[0]] = 1
+        
 # Iterowanie po liście stringów i usuwanie przecinków z wypłat
 no_commas_listaa = []
 for key ,value in funt_counts.items():
@@ -196,7 +197,7 @@ for key in rest_list:
 year_list
 
 # so I had year and day list already.
-#then I formatted 9 results fro day list to year format: 
+#then I formatted 9 results from day list to year format: I multiplied it by 260 (amount of workdays in year)
 dni_rok = [['104000',1],['156000-176000',1],['104000-119000',1],['105000',1],['52000',1],['156000-182000',1],['100000',1],['17000',1],['20000',1]]
 
 #added them to year_list
@@ -229,8 +230,10 @@ for key in cleaner_funty:
         aver_sum = aver*key[1]
         final_aver_funty.append(aver_sum)
         ranges.append([aver,key[1]])
-# this is average salary in pounds    (it's 54808 in USD)    
+        
+# this is average salary in pounds 44435   (it's 54654 in USD)    
 sum(final_aver_funty)/120
+
 # now last thing is to get how many times specific range occured. I divided all of ranges into 2 groups as below.
 over_100=[]
 under_100=[]
@@ -239,6 +242,7 @@ for key in ranges:
         over_100.append(key)
     else:
         under_100.append(key)
+        
 # and made dict with instances of every range. Ranges are from 10k-20k, 20k-30k etc.       
 counts_funty ={}
 for item in under_100:
@@ -256,5 +260,6 @@ for item in over_100:
         counts_funty[range_num] += item[1]
     else:
         counts_funty[range_num] = item[1]
+        
 # and it's finished. I won't show how I've dealt with dollars because it's basically the same. 
 counts_funty
