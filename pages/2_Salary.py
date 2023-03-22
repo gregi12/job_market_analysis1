@@ -17,7 +17,7 @@ df1= pd.read_csv(funty_path)
 st.write('Choose currency or overall')
 tab1,tab2,tab3,tab4= st.tabs(["Overview","Dollars", "Pounds", "Average salary"])
 with tab1:
-    st.write("Below is link to code which took us from something like this: '£35,000 - £55,000','£30K–£41K a year', '45–75 an hour','70K–80K a year', '$75K–$85K a year' to what you see in next tabs. ")
+    st.write("Below is link to code which took us from something like this: '£35,000 - £55,000','£30K–£41K a year', '45–75 an hour','70K–80K a year' to what you can see in next tabs. In short, after I got salaries from descriptions using regular expressions, I divided data into USD and pound lists, then divied even further to year, day hour etc. and then took average and how many times specific range appeared. ")
     with st.expander('Check if u want!'):
         st.write('https://github.com/gregi12/job_market_analysis1/blob/main/getting_salaries.py')
 
@@ -46,7 +46,7 @@ with tab3:
 with tab4:
     
     st.subheader('Average salary 📊')
-    st.write('So at the end there were 102 offers in USD and 119 was in Pounds. So I made 3 sections with offers from US, from UK and overall.')
+    st.write("At the end there were 102 offers in USD and 120 was in pounds and that's strange because most of offers were from US. It looks like in UK employers more willingly give information about salary . So I made 3 sections with offers from US, from UK and overall.")
     colors = ['r', 'b', 'g']
     fig = plt.figure()
     plt.bar(["Offers from US","Offers from UK","All offers in USD"],height= [90246,53534,70477],color=colors, edgecolor='black')
