@@ -17,7 +17,7 @@ df1= pd.read_csv(funty_path)
 st.write('Choose currency or overall')
 tab1,tab2,tab3,tab4= st.tabs(["Overview","Dollars", "Pounds", "Average salary"])
 with tab1:
-    st.write("Below is link to code which took us from something like this: '£35,000 - £55,000','£30K–£41K a year', '45–75 an hour','70K–80K a year' to what you can see in next tabs. In short, after I got salaries from descriptions using regular expressions, I divided data into USD and pound lists, then divied even further to year, day hour etc. . Then, I took average and how many times specific range appeared. As u see there were a lot of diffrent formats so I took this approach: If there was range , I took sum of first and second element and dividied it by 2. If not, I just used single value as average. ")
+    st.write("Below is link to code which took us from something like this: '£35,000 - £55,000','£30K–£41K a year', '45–75 an hour','70K–80K a year' to what you can see in next tabs. In short, after I got salaries from descriptions using regular expressions, I divided data into USD and pound lists, then divied even further to year, day hour etc. . Then, I took average and how many times specific range appeared. As u see there were a lot of diffrent formats so I took this approach: If there was range , I took sum of first and second element and dividied it by 2. If not, I just used single value as average. If salary was per hour, I  multiplied it by 2080 (8 hours per day, 260 workdays in year as google says.) ")
     with st.expander('Check if u want!'):
         st.write('https://github.com/gregi12/job_market_analysis1/blob/main/getting_salaries.py')
 
