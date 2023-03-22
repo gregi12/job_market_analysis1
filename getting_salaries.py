@@ -205,7 +205,7 @@ dni_rok = [['104000',1],['156000-176000',1],['104000-119000',1],['105000',1],['5
 #added them to year_list
 for key in dni_rok:
     year_list.append(key)
-
+year_list.append(['15000',1])
 # Then removed all unnecessary characters and replaced K with 000 so everything is in same format now
 cleaner_funty=[]
 for key in year_list:
@@ -233,7 +233,7 @@ for key in cleaner_funty:
         final_aver_funty.append(aver_sum)
         ranges.append([aver,key[1]])
         
-# this is average salary in pounds 44435   (it's 54654 in USD)    
+# this is average salary in pounds 44559   (it's 54807 in USD)    
 sum(final_aver_funty)/120
 
 # now last thing is to get how many times specific range occured. I divided all of ranges into 2 groups as below.
