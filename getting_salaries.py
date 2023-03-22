@@ -1,5 +1,7 @@
-import sys
-sys.path.append(r'C:\Users\komputer\Desktop\aktualne\environment\serpapi\job_analysis\Lib\site-packages')
+# these 2 lines connect jupyter notebook with packages in my virtualnev. I know it's a way to add it for good but just keeped that.
+#import sys
+#sys.path.append(r'C:\Users\komputer\Desktop\aktualne\environment\serpapi\job_analysis\Lib\site-packages')
+
 # So after I obtained all the data it's time to make use of it
 # Here I concatenated data to 1 big DataFrame and get everything to clean form
 import pandas as pd
