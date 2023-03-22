@@ -195,4 +195,66 @@ for key in rest_list:
     year_list.append([key[0],key[1]])
 year_list
 
-# so I had year and day lsit already.
+# so I had year and day list already.
+#then I formatted 9 results fro day list to year format: 
+dni_rok = [['104000',1],['156000-176000',1],['104000-119000',1],['105000',1],['52000',1],['156000-182000',1],['100000',1],['17000',1],['20000',1]]
+
+#added them to year_list
+for key in dni_rok:
+    year_list.append(key)
+
+# Then removed all unnecessary characters and replaced K with 000 so everything is in same format now
+cleaner_funty=[]
+for key in year_list:
+    jo = key[0].replace('K','000').replace('T','000').replace('£','').replace('–','-')
+    cleaner_funty.append([jo,key[1]])
+# I had to manually change 1 result
+cleaner_funty.remove(['42.3000', 1])
+cleaner_funty.append(['42300',1])
+# and here I splitted salary ranges on '-' and took average of everything in final_aver_funty and how many specific salary happend in ranges.
+ranges = []
+final_aver_funty=[]
+for key in cleaner_funty:
+    if len(key[0])<=6:
+        jo = round(float(key[0]))
+        jo2 = round(float(jo))*key[1]
+        final_aver_funty.append(jo2)
+        ranges.append([jo,key[1]])
+    else:
+        
+        jo = key[0].split('-')
+        first = round(float(jo[0]))
+        second = round(float(jo[1]))
+        aver = (first+second)/2
+        aver_sum = aver*key[1]
+        final_aver_funty.append(aver_sum)
+        ranges.append([aver,key[1]])
+# this is average salary in pounds    (it's 54808 in USD)    
+sum(final_aver_funty)/120
+# now last thing is to get how many times specific range occured. I divided all of ranges into 2 groups as below.
+over_100=[]
+under_100=[]
+for key in ranges:
+    if key[0]>=100000:
+        over_100.append(key)
+    else:
+        under_100.append(key)
+# and made dict with instances of every range. Ranges are from 10k-20k, 20k-30k etc.       
+counts_funty ={}
+for item in under_100:
+    range_num = str(item[0])
+    range_num = range_num[0]
+    if range_num in counts_funty:
+        counts_funty[range_num] += item[1]
+    else:
+        counts_funty[range_num] = item[1]
+        
+for item in over_100:
+    range_num = str(item[0])
+    range_num = range_num[0:2]
+    if range_num in counts_funty:
+        counts_funty[range_num] += item[1]
+    else:
+        counts_funty[range_num] = item[1]
+# and it's finished. I won't show how I've dealt with dollars because it's basically the same. 
+counts_funty
