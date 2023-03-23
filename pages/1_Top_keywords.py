@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import os
+from matplotlib.lines import Line2D
 
 # Pobierz aktualną ścieżkę do folderu, w którym znajduje się plik Top_key.py
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -26,6 +27,12 @@ with tab1:
   plt.bar(df['keywords'], df['amount'],color=colors, edgecolor='black')
   plt.xticks(rotation=90)
   plt.ylabel('Amount')
+  skills_handle = Line2D([0], [0], color='blue', label='Skills')
+  tools_handle = Line2D([0], [0], color='red', label='Tools', linestyle='-',
+                      marker='o', markersize=5, markerfacecolor='yellow', markeredgecolor='orange')
+
+# Add custom legend to the plot
+  plt.legend(handles=[skills_handle, tools_handle])
   # Display chart in Streamlit app
   st.pyplot(fig)
   original_title = '<p style="font-family:Courier; font-size: 20px; font-weight:600;">We clearly see that Excel is the most wanted skill in data analytics market. It was found in over 60% of descriptions. A little less demand is on sql and degree. Visualization tools like Power Bi and Tableau have high demand aswell.</p>'
