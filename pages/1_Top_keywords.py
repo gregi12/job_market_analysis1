@@ -21,7 +21,7 @@ tab1, tab2 , tab3= st.tabs(["Quantity", "Percentage", "Table"])
 with tab1:
   
   st.subheader('Top 15 keywords by amount 📊')
-  colors = ['#F21D1D', '#F64F20', '#2439E1','grey','#F7653B'] 
+  colors = ['#F21D1D', '#F64F20', '#2439E1','#2962F8','#F7653B'] 
   fig = plt.figure()
   plt.bar(df['keywords'], df['amount'],color=colors, edgecolor='black')
   plt.xticks(rotation=90)
