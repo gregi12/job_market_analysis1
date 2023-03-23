@@ -49,7 +49,12 @@ with tab2:
   # ustawienie kolorów słupków
   plt.xticks(rotation=90)
   plt.ylabel('%')
+  skills_handle = Line2D([0], [0], color='blue', label='Skills')
+  tools_handle = Line2D([0], [0], color='red', label='Tools', linestyle='-',
+                      marker='o', markersize=5, markerfacecolor='yellow', markeredgecolor='orange')
 
+  # Add custom legend to the plot
+  plt.legend(handles=[skills_handle, tools_handle])
   # Display chart in Streamlit app
   st.pyplot(fig)
 
