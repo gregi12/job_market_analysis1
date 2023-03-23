@@ -37,7 +37,7 @@ with tab2:
 # Create bar chart sorted by value
   st.subheader('Top 15 keywords by percentage 📊')
   fig = plt.figure()
-  colors = ['#49D0FF', 'b', 'g'] + ['grey'] * 12
+  colors = ['#FF0909', 'b', 'g'] + ['grey'] * 12
   plt.bar(df['keywords'], df['percentage'],color=colors, edgecolor='black')
   # ustawienie kolorów słupków
   plt.xticks(rotation=90)
