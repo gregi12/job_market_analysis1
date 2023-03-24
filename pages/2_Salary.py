@@ -17,7 +17,7 @@ df1= pd.read_csv(funty_path)
 dolary_path = os.path.join(BASE_DIR, '..', 'files', 'dolary.png')
 
 funty_path = os.path.join(BASE_DIR, '..', 'files', 'funty.png')
-st.subheader('In the right corner of chart, there is a button to turn on fullscreen if needed 📊')
+
 st.write('Choose currency or overall')
 tab1,tab2,tab3,tab4= st.tabs(["Overview","Dollars", "Pounds", "Average salary"])
 with tab1:
@@ -28,7 +28,7 @@ with tab1:
 
     
 with tab2:
-    
+    st.subheader('In the right corner of chart, there is a button to turn on fullscreen if needed 📊')
     st.image(dolary_path)
     # colors = ['r', 'b', 'g'] + ['grey'] * 12
     # fig = plt.figure()
