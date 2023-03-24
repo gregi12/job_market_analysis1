@@ -51,7 +51,7 @@ try:
     with col1:
       button1 = st.button("About analysis")
       if button1:
-        original_title = '<p style="font-family:Calibri; font-size: 20px; font-weight:600;">Sooo, these results comes from over 1200 job offers. Above is link to github file where I give more detailed explanation about how I obtained the data. I extracted valuable data using regular expressions(regex)</p>'
+        original_title = '<p style="font-family:Calibri; font-size: 20px; font-weight:600;">Sooo, these results comes from over 1200 job offers. Above is link to github file where I give more detailed explanation about how I obtained the data. I extracted valuable data using regular expressions (regex)</p>'
         st.markdown(original_title, unsafe_allow_html=True)
         with st.expander("More info here!"):
           st.write("https://github.com/gregi12/job_market_analysis1/blob/main/getting_keywords.py")
