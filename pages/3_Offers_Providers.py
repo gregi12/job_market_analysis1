@@ -52,13 +52,12 @@ with tab2:
     labels = [key for key in full_provid['Via'][:5]]
     labels.append('Rest')
     
-    colors = ['#FC1A00', '#05D832', '#F1FC00','#8F8585','#bdbdbd','#E03AE7'] 
+    colors = ['#FC1A00', '#05D832', '#F1FC00','#8F8585','#bdbdbd'] 
     fig, ax = plt.subplots()
     
     ax.pie(keys, labels=labels, 
           startangle = 90,
-          autopct='%1.1f%%',
-          colors=colors)
+          autopct='%1.1f%%')
     
     st.pyplot(fig)
 
