@@ -25,7 +25,7 @@ with tab1:
   colors = ['#F21D1D', '#FD3327' ,'#0816D8', '#334CF9','#F64F20','#F7653B','#F9A04D','#FDDC48','#FFFF4F','#5167FA','#FFE580','#7788FF','#9198FF','#CED4FF','#FAF7B7'] 
   fig = plt.figure()
   plt.bar(df['keywords'], df['amount'],color=colors, edgecolor='black')
-  plt.xticks(rotation=90)
+  plt.xticks(rotation=30)
   plt.ylabel('Amount')
   skills_handle = Line2D([0], [0], color='blue', label='Skills')
   tools_handle = Line2D([0], [0], color='red', label='Tools', linestyle='-',
