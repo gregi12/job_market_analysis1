@@ -29,4 +29,4 @@ with tab2:
 
     # Equal aspect ratio ensures that pie is drawn as a circle
     ax.axis('equal')
-    st.pyplot(ax)
+    st.pyplot(fig)
