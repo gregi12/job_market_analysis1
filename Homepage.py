@@ -13,7 +13,7 @@ st.set_page_config(
 custom_css = """
 <style>
     .stTextInput input {
-        border: 1px solid #A7ADA7 !important;
+        border: 1px solid #C1C6CB !important;
     }
 </style>
 """
