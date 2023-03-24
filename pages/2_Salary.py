@@ -43,7 +43,7 @@ with tab3:
 with tab4:
     
     st.subheader('Average salary 📊')
-    st.write("At the end there were 102 offers in USD and 120 was in pounds and that's strange because most of offers were from US. It looks like, in UK ,employers more willingly give informations about salary . I decided to make 3 sections with offers from US, from UK and overall.")
+    st.write("At the end there were 102 offers in USD and 120 was in pounds and that's strange because most of offers were from US. It looks like in UK, employers more willingly give informations about salary . I decided to make 3 sections with offers from US, from UK and overall.")
     colors = ['r', 'b', 'g']
     fig = plt.figure()
     plt.bar(["Offers from US","Offers from UK","All offers in USD"],height= [90246,53534,70477],color=colors, edgecolor='black')
