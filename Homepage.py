@@ -73,12 +73,9 @@ try:
 
     with col3:
       if st.button("About me"):
-        original_title = "<p style='font-family:Calibri; font-size: 20px; font-weight:600;'> I'm a young person with a lot of energy and ideas. I am kind of guy who looks for patterns everywhere. Maybe I don't have strong math background, because I haven't graduate any studies but skills are there for sure, in high school I was laureate of district-level math competition (there were only about 80 students in my voivodeship with the same status).  </p>"
+        original_title = "<p style='font-family:Calibri; font-size: 20px; font-weight:600;'> I'm a young person with a lot of energy and ideas. I am kind of guy who looks for patterns everywhere. Maybe I don't have strong math background, because I haven't graduate any studies but skills are there for sure, in high school I was laureate of district-level math competition (there were only about 80 students in my voivodeship with the same status). For some time I'm catching up with statistics and linear algebra, on my own . In the future I want to work in AI industry .  </p>"
         st.markdown(original_title, unsafe_allow_html=True)
-        with st.expander("Here is proof"):
-          st.write("https://github.com/gregi12/Jobs-offers-project/blob/master/final_analysis.py")
-        original_title = "<p style='font-family:Calibri; font-size: 20px; font-weight:600;'>For some time I'm catching up with statistics and linear algebra, on my own . In the future I want to work in AI industry .</p>"
-        st.markdown(original_title, unsafe_allow_html=True)
+        
 except:
   pass
 
