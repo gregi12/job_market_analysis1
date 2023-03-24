@@ -28,7 +28,7 @@ with tab1:
 
     
 with tab2:
-    st.write('In the right corner of chart, there is a button to turn on fullscreen if needed 📊')
+    st.subheader('In the right corner of chart, there is a button to turn on fullscreen if needed 📊')
     st.image(dolary_path)
     # colors = ['r', 'b', 'g'] + ['grey'] * 12
     # fig = plt.figure()
