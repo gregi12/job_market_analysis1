@@ -22,7 +22,7 @@ nested_list = ['senior','developing\\sreports','sql', 'database', 'data\\smanagm
                'excellent\sscommunication', 'interpersonal\\sskills', 'maintain\\sdata\\ssets', 'data\\sbase\\sdevelopment', 
                'maintain\\sdatabases', 'Extracting\\sdata', 'data\\swarehouse', 'agile', 'scrum', 'Excellent\\sverbal\\sand\\swritten']
 
-
+# this function loops every description in given dataframe and looks for all keywords from nested list
 def get_keywords(data):
     lista_keywords = []
     for desc in data['description']:
@@ -43,10 +43,10 @@ def get_keywords(data):
 lista_keywords = get_keywords(df)
 
 # Here I make set from this list so I got back all unique keywords 
-# and 
+#
 set_keywords = set(lista_keywords)
 
-#here id dict with keywords and how many times they appeared 
+#here I got dict with keywords and how many times they appeared 
 import operator
 ostateczny_slownik = (dict((x,lista_keywords.count(x)) for x in set_keywords))
 
