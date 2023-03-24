@@ -70,4 +70,4 @@ for sublist in lista_laczna:
 # And finally we got all keywords sorted 
 slownik = dict(sorted(word_count.items(), key=operator.itemgetter(1),reverse=True ))
 
-# then I just took 15 top keywords(before this I concatenated powerbiand power bi), added them to dataframe and that's it
+# then I just took 15 top keywords(before this I concatenated powerbi and power bi), added them to dataframe and that's it
