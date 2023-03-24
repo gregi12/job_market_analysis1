@@ -27,7 +27,7 @@ with tab1:
 
     
 with tab2:
-    st.subheader('In right corner of chart, shows up button to make it bigger if image is too small  📊')
+    st.subheader('In right corner of chart, there is a button to turn on fullscreen if needed 📊')
     st.image(dolary_path)
     # colors = ['r', 'b', 'g'] + ['grey'] * 12
     # fig = plt.figure()
