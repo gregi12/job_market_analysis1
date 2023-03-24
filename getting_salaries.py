@@ -95,7 +95,6 @@ for index, row in df.iterrows():
 year_salary =[]
 for key in slownik_value_dict.keys():
     year_salary.append(key)
-len(year_salary)
 year_salary
     
     
@@ -103,9 +102,9 @@ nowa = []
 for key in year_salary:
     nowa.append([key,df['salary'].iloc[key]])
     
-# So i had and idea and made list of lists where every sublist was like this
+# So i had an idea and made list of lists where every sublist was like this
 # first element was salary, second  was 4 last letters of salary string , so I know if it is year day hour or something diffrent
-# and last element was offer index in dataframe so I can match salary with offer when some problem appear
+# and last element was offer index in dataframe so I can match salary with offer if some kind of problem appear
 wypki =[]
 for key in nowa:
     wypki.append([key[1],key[1][-4:],key[0]])
@@ -128,7 +127,7 @@ def dodaj(lista):
 
 dodaj(wypki)
 # now I almost have all salaries grouped by currency
-# It turned out that all results from rest are in dollars so I added them and results which first to characters were 'US'
+# It turned out that all results from rest are in dollars so I added them and results which first to characters were 'US' to dolary
 for key in rest:
     dolary.append(key)
 for sublt in us:
