@@ -27,7 +27,7 @@ with tab1:
 
     
 with tab2:
-    st.subheader('Salary ranges in dollars 📊')
+    st.subheader('In right corner of chart, shows up button to make it bigger if image is too small  📊')
     st.image(dolary_path)
     # colors = ['r', 'b', 'g'] + ['grey'] * 12
     # fig = plt.figure()
@@ -38,16 +38,7 @@ with tab2:
     # st.pyplot(fig)
 
 with tab3:
-    st.write('Here are offers which originally were in pounds' )
-    st.subheader('Salary ranges in pounds 📊')
-    colors = ['r', 'b', 'g'] + ['grey'] * 12
-    fig = plt.figure()
-    plt.bar(df1['salary'], df1['amount'],color=colors, edgecolor='black')
-    plt.xticks(rotation=90)
-    plt.ylabel('Amount')
-    # Display chart in Streamlit app
-    st.pyplot(fig)
-
+    st.image(funty_path)
 with tab4:
     
     st.subheader('Average salary 📊')
