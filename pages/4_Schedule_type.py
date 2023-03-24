@@ -19,7 +19,7 @@ with tab1:
     fig = plt.figure()
     colors = ['#D2042D', '#702963', '#C04000','#8F8585'] 
     plt.bar(df['Type'], df['Amount'],color=colors,edgecolor='black',linewidth=1)
-    plt.xticks(rotation=90)
+    plt.xticks(rotation=45)
     plt.ylabel('Amount')
     # Display chart in Streamlit app
     st.pyplot(fig)
