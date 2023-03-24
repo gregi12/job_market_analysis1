@@ -10,6 +10,16 @@ st.set_page_config(
   page_icon = '📊'
 )
 # Expander section
+custom_css = """
+<style>
+    .stTextInput input {
+        border: 1px solid #A67C52 !important;
+    }
+</style>
+"""
+
+# Add custom CSS to the Streamlit app
+st.markdown(custom_css, unsafe_allow_html=True)
 try:
   original_title = '<p style="font-family:Calibri; font-size: 20px; font-weight:500;">Good day to you, mysterious one, I would like to present you results of my analysis</p>'
   st.markdown(original_title, unsafe_allow_html=True)
