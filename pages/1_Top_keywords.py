@@ -35,7 +35,7 @@ with tab1:
   plt.legend(handles=[skills_handle, tools_handle])
   # Display chart in Streamlit app
   st.pyplot(fig)
-  original_title = '<p style="font-family:Courier; font-size: 20px; font-weight:600;">We clearly see that Excel is the most wanted skill in data analytics market. It was found in over 60% of descriptions. A little less demand is on sql and degree. Visualization tools like Power Bi and Tableau have high demand aswell.</p>'
+  original_title = '<p style="font-family:Courier; font-size: 20px; font-weight:600;">We clearly see that Excel is the most wanted tool/skill in data analytics market. It was found in over 60% of descriptions. A little less demand is on sql and degree. Ability to work with databases and visualization tools like Power Bi or Tableau have high demand aswell.</p>'
   st.markdown(original_title, unsafe_allow_html=True)
 
   
