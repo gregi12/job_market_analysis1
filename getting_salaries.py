@@ -243,7 +243,7 @@ for key in ranges:
         over_100.append(key)
     else:
         under_100.append(key)
-        
+     
 # and made dict with instances of every range. Ranges are from 10k-20k, 20k-30k etc.       
 counts_funty ={}
 for item in under_100:
