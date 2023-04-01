@@ -24,16 +24,6 @@ try:
   original_title = '<p style="font-family:Calibri; font-size: 20px; font-weight:500;">Good day to you, mysterious one, I would like to present you results of my analysis</p>'
   st.markdown(original_title, unsafe_allow_html=True)
 
-  # Sidebar section
-  with st.sidebar:
-    st.subheader('This is a Sidebar')
-    st.write('Button with Balloons 🎈')
-    if st.button('Click me!✨'):
-      st.balloons()
-    else:
-      st.write(' ')
-
-
 
   st.subheader('But firstly, follow instruction below to continue!')
   if "greet" not in st.session_state:
