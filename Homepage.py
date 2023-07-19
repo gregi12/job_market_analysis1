@@ -45,7 +45,7 @@ try:
       st.write("https://github.com/gregi12/job_market_analysis1/blob/main/obtaining_data.py")
 
        # Tworzenie trzech przycisków w trzech kolumnach
-    col1, col2, col3 = st.beta_columns(3)
+    col1, col2, col3 = st.columns(3)
 
     # Dodawanie przycisków do kolumn
     with col1:
