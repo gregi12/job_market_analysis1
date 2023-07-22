@@ -116,7 +116,6 @@ result = pd.concat([df,df1])
 result.to_csv('analiza-ofert.csv')
 
 #At the end I added all the data to my database to ensure I won't lose anything by mistake
-# I was trying to automatize that on GCP but couldn't find out how, there were always some problem when deploying the function
 import pandas as pd
 import sqlalchemy
 engine = sqlalchemy.create_engine('mysql+pymysql://root:@localhost:3306/oferty_pracy')
