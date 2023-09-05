@@ -55,6 +55,6 @@ try:
       st.markdown(original_title, unsafe_allow_html=True)
  
         
-  except:
-    pass
+except:
+  pass
   
