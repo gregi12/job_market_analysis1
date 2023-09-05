@@ -24,7 +24,7 @@ try:
   original_title = '<p style="font-family:Calibri; font-size: 20px; font-weight:500;">Good day to you, mysterious one, I would like to present you results of my analysis</p>'
   st.markdown(original_title, unsafe_allow_html=True)
   
-  original_title = '<p style="font-family:Courier; font-size: 20px; font-weight:600;">My name is Grzegorz. As we already know each other and you are still here, I will give brief overview of this analysis, app and maybe few words about me.</p>'
+  original_title = '<p style="font-family:Courier; font-size: 20px; font-weight:600;">My name is Grzegorz. If you are still here, I will give brief overview of this analysis, app and maybe few words about me.</p>'
   st.markdown(original_title, unsafe_allow_html=True)
   st.write(' ')
 
