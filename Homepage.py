@@ -51,7 +51,7 @@ try:
 
   with col3:
     if st.button("About me"):
-      original_title = "<p style='font-family:Calibri; font-size: 20px; font-weight:600;'> I'm a young person with a lot of energy and ideas. I am kind of guy who looks for patterns everywhere. Maybe I don't have strong math background, because I haven't graduate any studies but skills are there for sure, in high school I was laureate of district-level math competition (there were only about 80 students in my voivodeship with the same status). For some time I'm catching up with statistics and linear algebra, on my own . In the future I want to work in AI industry  </p>"
+      original_title = "<p style='font-family:Calibri; font-size: 20px; font-weight:600;'> I'm a young person with a lot of energy and ideas. I am kind of guy who looks for patterns everywhere. In high school I was laureate of district-level math competition (there were only about 80 students in my voivodeship with the same status). For some time I'm catching up with statistics and linear algebra. In the future I want to work in as a Data Analyst or in AI industry   </p>"
       st.markdown(original_title, unsafe_allow_html=True)
  
         
