@@ -59,7 +59,7 @@ def do_stuff():
     import numpy as np
     import pandas as pd
     import datetime
-    api_key = 'd9e1f7d32270c69ad8a9a1a657a16bc1fc98e3c32d6b99fd67c1d2167d66790b'
+    api_key = ''
 
     for num in range(10):
 
